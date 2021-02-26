@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td, th {
+      border: 2px solid gray;
+      padding: 3px;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2"></th>
+        <th>one</th>
+        <th>two</th>
+        <th>three</th>
+        <th>four</th>
+        <th>five</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <caption>aaaa</caption>
+        <th rowspan="2" colspan="2" scope="rowgroup">one</th>
+        <th scope="row">sub-one</th>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>four</td>
+      </tr>
+      <tr>
+        <th scope="row">sub-two</th>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>four</td>
+      </tr>
+      <tr>
+        <th rowspan="2" colspan="1" scope="colgroup">two</th>
+        <th scope="col">three</th>
+        <th scope="col">four</th>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>four</td>
+      </tr>
+      <tr>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>

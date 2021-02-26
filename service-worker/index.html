@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worker-test</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <button id="btn">run</button>
+
+    <script>
+      const workerHandle = (e) => {
+        let div = document.createElement('div');
+        div.textContent = e.data;
+        document.getElementById('result').appendChild(div);
+      }
+
+      document.getElementById('btn').addEventListener('click', function () {
+        let worker1 = new Worker('worker.js');
+        let worker2 = new Worker('worker.js');
+        let worker3 = new Worker('worker.js');
+        worker1.addEventListener('message', workerHandle);
+        worker2.addEventListener('message', workerHandle);
+        worker3.addEventListener('message', workerHandle);
+        worker1.postMessage('일해라 워커1!');
+        worker2.postMessage('일해라 워커2!');
+        worker3.postMessage('일해라 워커3!');
+      });
+    </script>
+  </body>
+</html>

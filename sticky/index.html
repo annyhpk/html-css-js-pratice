@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 128px;
+      height: 200px;
+      overflow: auto;
+    }
+
+    section {
+      display: flex;
+      flex-flow: column;
+      width: 100px;
+    }
+
+    b {
+      background: #9932CC;
+      text-align: center;
+    }
+
+    b.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background: #8B008B;
+    }
+  </style>
+</head>
+<body>
+  <div class="viewer">
+    <section>
+      <b class="sticky">A</b>
+      <b>Apple</b>
+      <b>Airplain</b>
+      <b>A.I</b>
+      <b>Audio</b>
+      <b>Award</b>
+    </section>
+    <section>
+      <b class="sticky">B</b>
+      <b>Bubble</b>
+      <b>Boy</b>
+      <b>Bamboo</b>
+      <b>Ball</b>
+      <b>Backup</b>
+    </section>
+    <section>
+      <b class="sticky">C</b>
+      <b>Cat</b>
+      <b>Calendar</b>
+      <b>Carousel</b>
+      <b>Canvas</b>
+      <b>Cash</b>
+    </section>
+    <section>
+      <b class="sticky">D</b>
+      <b>Delivery</b>
+      <b>Disco</b>
+      <b>Date</b>
+      <b>Design</b>
+      <b>Dragon</b>
+    </section>
+    <section>
+      <b class="sticky">E</b>
+      <b>.......</b>
+      <b>.......</b>
+      <b>.......</b>
+      <b>.......</b>
+      <b>.......</b>
+    </section>
+    <section>
+      <b class="sticky">F</b>
+      <b>.......</b>
+      <b>.......</b>
+      <b>.......</b>
+      <b>.......</b>
+      <b>.......</b>
+    </section>
+  </div>
+</body>
+</html>
