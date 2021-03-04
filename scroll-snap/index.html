@@ -9,11 +9,13 @@
         width: 100%;
         height: 100%;
       }
-      #main {
+      
+      .main {
         display: flex;
         justify-content: center;
       }
-      .section {
+
+      .main > div {
         overflow-x: auto;
         overscroll-behavior-x: contain;
         scroll-snap-type: x mandatory;
@@ -38,7 +40,7 @@
     <title>Document</title>
   </head>
   <body>
-  <div id="main">
+  <div class="main">
     <div class="section">
       <div>X Prox. LTR</div>
       <div>2</div>

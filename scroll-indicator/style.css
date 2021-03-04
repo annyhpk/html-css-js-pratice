@@ -15,7 +15,7 @@ header {
   background: white;
 }
 
-#progress-bar {
+header > div {
   width: 0%;
   background: aqua;
   height: 10px;
